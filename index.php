@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>CRD Empleados</title>
+<title>App Listado</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -46,7 +46,7 @@ $(document).ready(function(){
 			<div class="table-title">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2><b>Empleados</b></h2>
+						<h2><b>PHP App Listado</b></h2>
 					</div>
 					<div class="col-sm-6">
 						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>añadir Empleado</span></a>						
@@ -174,11 +174,11 @@ if(!$conn)
 	//echo'</div>';
 }
 
-$instancia_id = exec( "cat /sys/hypervisor/uuid");
+// $instancia_id = exec( "cat /sys/hypervisor/uuid");
 
-echo'<div class="alert alert-dark" role="alert">';
-echo'Conectado a la instancia: <b>'.$instancia_id.'</b>';
-echo'</div>';
+// echo'<div class="alert alert-dark" role="alert">';
+// echo'Conectado a la instancia: <b>'.$instancia_id.'</b>';
+// echo'</div>';
 
 
 

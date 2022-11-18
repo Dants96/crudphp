@@ -1,11 +1,10 @@
 
 <?php
 
-$sn= "datos-personales.cxhrcdslprks.us-east-1.rds.amazonaws.com";
+$sn= "db-datos-personales-exp.czvd26efq0fq.us-east-1.rds.amazonaws.com";
 $db= "informacion";
-$user = "root";
-$pass = "123456789";
-
+$user = "admin";
+$pass = "QJu0009zmYe1pRIJBnDV";
 
 $conn= mysqli_connect($sn,$user,$pass,$db);
 
