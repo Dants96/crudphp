@@ -222,3 +222,7 @@ table.table .avatar {
 .modal form label {
 	font-weight: normal;
 }	
+
+.bd-masthead{
+	background: #232323 url(../../../../themes/udenar4.0/images/backgrounds/patterns/full/halftone-dark.png) repeat center top;
+}

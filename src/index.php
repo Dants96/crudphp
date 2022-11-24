@@ -46,7 +46,7 @@ $(document).ready(function(){
 			<div class="table-title">
 				<div class="row">
 					<div class="col-sm-6">
-						<h2><b>PHP App Listado</b></h2>
+						<h2><b>PHP App Listado 2</b></h2>
 					</div>
 					<div class="col-sm-6">
 						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>añadir Empleado</span></a>						
@@ -67,7 +67,11 @@ $(document).ready(function(){
 					
 						
  <?php
+ ini_set('display_errors', 1);
+ ini_set('display_startup_errors', 1);
+ error_reporting(E_ALL);
             include 'conexion.php';
+			echo("hasta aqui");
             $sql = "SELECT * FROM datos";    
             $result = mysqli_query($conn, $sql);     
             if (mysqli_num_rows($result) > 0) {
@@ -174,15 +178,21 @@ if(!$conn)
 	//echo'</div>';
 }
 
-// $instancia_id = exec( "cat /sys/hypervisor/uuid");
-
-// echo'<div class="alert alert-dark" role="alert">';
-// echo'Conectado a la instancia: <b>'.$instancia_id.'</b>';
-// echo'</div>';
-
-
-
 ?>
-
+<div class="container card mt-4">
+            <div class="jumbotron jumbotron-fluid ">
+                <div class="container text-center">
+                    <h1 class="display-4">App CRUD en PHP Contenerizada con Docker</h1>
+                    <img src="logo-udenar.png" />
+                    <p class="lead">Computación en la Nube</p>
+                    <p> Universidad de Nariño</p>
+                    <p class="lead">Ingenieria de Sistemas</p>
+                    <p class="lead">2022</p>
+                    <hr class="my-4">
+                    <p class="display-5">Hecho por:</p>        
+                    <p class="display-4 ">Daniel Tutistar y Kevin Yama</p>        
+                </div>
+            </div>
+        </div>
 </body>
 </html>
